@@ -7,5 +7,5 @@ Tested: macOS Ventrua 13.3.1
 
 Example work:
 <p align="center">
-  <img src="[https://github.com/MikeostCorp/Gradify/blob/main/src/img/iconSets/icon_512x512%402x.pn](https://github.com/AndriyPetrovic/Window-constructor-with-background-blur/blob/main/photoExamples.png" width="700" height="400">
+  <img src="https://github.com/MikeostCorp/Gradify/blob/main/src/img/iconSets/icon_512x512%402x.pn](https://github.com/AndriyPetrovic/Window-constructor-with-background-blur/blob/main/photoExamples.png" width="700" height="400">
 </p>
