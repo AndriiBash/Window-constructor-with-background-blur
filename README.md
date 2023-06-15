@@ -6,6 +6,5 @@ This application is a shape with a Blur Behind effect to create an aesthetically
 Tested: macOS Ventura 13.3.1, macOS Catalina 10.15.7
 
 Example work:
-<p align="center">
-  <img src="https://github.com/AndriyPetrovic/Window-constructor-with-background-blur/blob/main/photoExamples.png" width="700" height="400">
+<p align="center">  <img src="https://github.com/AndriyPetrovic/Window-constructor-with-background-blur/blob/main/photoExamples.png" width="450" height="235">
 </p>
