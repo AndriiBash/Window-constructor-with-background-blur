@@ -1,3 +1,16 @@
+//-------------------------------------------------------------------------------------------
+//
+//  Project Window-constructor-with-background-blur
+//  Copyright © 2023. All Rights Reserved.
+//
+//  OS:           macOS 13.4 (Ventura)
+//  FILE:         mainwindow.cpp
+//  AUTHOR:       Andrii Izbash
+//
+//  Project link: https://github.com/AndriyPetrovic/Window-constructor-with-background-blur
+//-------------------------------------------------------------------------------------------
+
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 

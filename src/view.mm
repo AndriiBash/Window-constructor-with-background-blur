@@ -1,3 +1,16 @@
+//-------------------------------------------------------------------------------------------
+//
+//  Project Window-constructor-with-background-blur
+//  Copyright © 2023. All Rights Reserved.
+//
+//  OS:           macOS 13.4 (Ventura)
+//  FILE:         wiem.mm
+//  AUTHOR:       Andrii Izbash
+//
+//  Project link: https://github.com/AndriyPetrovic/Window-constructor-with-background-blur
+//-------------------------------------------------------------------------------------------
+
+
 #include "BlurWidget.h"
 #include <mainwindow.h>
 
@@ -41,12 +54,10 @@ BlurWidget::BlurWidget() : QWidget()
     mainLayout->addWidget(content);
     mainLayout->setContentsMargins(0, 0, 0, 0);
 
-
     NSView* contentView = (NSView*)content->winId();
     [wnd.contentView addSubview:contentView];
 
     content->show();
-
 }
 
 

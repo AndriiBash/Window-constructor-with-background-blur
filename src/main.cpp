@@ -1,3 +1,16 @@
+//-------------------------------------------------------------------------------------------
+//
+//  Project Window-constructor-with-background-blur
+//  Copyright © 2023. All Rights Reserved.
+//
+//  OS:           macOS 13.4 (Ventura)
+//  FILE:         main.cpp
+//  AUTHOR:       Andrii Izbash
+//
+//  Project link: https://github.com/AndriyPetrovic/Window-constructor-with-background-blur
+//-------------------------------------------------------------------------------------------
+
+
 #include <QApplication>
 #include <blurWidget.h>
 #include <mainwindow.h>
@@ -13,19 +26,10 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    //MainWindow window;
-    //window.show();
-
     BlurWidget blurWindow;
-    blurWindow.layout()->setContentsMargins(0,0,0,0);
-    //blurWindow.layout()->setSpacing(0);
-    blurWindow.resize(300,300);
+    blurWindow.layout()->setContentsMargins(0, 0, 0, 0);
+    blurWindow.setMinimumSize(450, 200);
     blurWindow.show();
-
-
-    /*MainWindow window;
-    window.resize(300, 300);
-    window.show(); */
 
     return app.exec();
 }
