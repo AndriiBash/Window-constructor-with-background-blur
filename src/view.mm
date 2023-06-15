@@ -9,8 +9,8 @@ BlurWidget::BlurWidget() : QWidget()
     setAttribute(Qt::WA_TranslucentBackground);
 
     // native window dragging, smoother than handling mouseMoveEvent
-    NSView *view = (NSView *)window()->effectiveWinId();
-    NSWindow *wnd = [view window];
+    NSView* view = (NSView*)window()->effectiveWinId();
+    NSWindow* wnd = [view window];
     [wnd setMovableByWindowBackground:YES];
 
     // setup the native vibrancy effect
@@ -31,7 +31,7 @@ BlurWidget::BlurWidget() : QWidget()
     content->setContentsMargins(0, 0, 0, 0);
     content->move(0, 0);
 
-    MainWindow *leftMenuWindow = new MainWindow(this);
+    MainWindow* leftMenuWindow = new MainWindow(this);
 
     QVBoxLayout* layout = new QVBoxLayout(content);
     layout->addWidget(leftMenuWindow);
@@ -42,7 +42,7 @@ BlurWidget::BlurWidget() : QWidget()
     mainLayout->setContentsMargins(0, 0, 0, 0);
 
 
-    NSView *contentView = (NSView *)content->winId();
+    NSView* contentView = (NSView*)content->winId();
     [wnd.contentView addSubview:contentView];
 
     content->show();
@@ -53,8 +53,8 @@ BlurWidget::BlurWidget() : QWidget()
 void BlurWidget::moveEvent(QMoveEvent *event)
 {
     QWidget::moveEvent(event);
-    NSView *view = (NSView *)window()->effectiveWinId();
-    NSWindow *wnd = [view window];
+    NSView* view = (NSView*)window()->effectiveWinId();
+    NSWindow* wnd = [view window];
     NSView* effect = (NSView*)effectsView;
     [effect setFrame:[ [ wnd contentView ] frame ]];
 }
@@ -63,8 +63,8 @@ void BlurWidget::moveEvent(QMoveEvent *event)
 void BlurWidget::resizeEvent(QResizeEvent *event)
 {
     QWidget::resizeEvent(event);
-    NSView *view = (NSView *)window()->effectiveWinId();
-    NSWindow *wnd = [view window];
+    NSView* view = (NSView*)window()->effectiveWinId();
+    NSWindow* wnd = [view window];
     NSView* effect = (NSView*)effectsView;
     [effect setFrame:[ [ wnd contentView ] frame ]];
 }
