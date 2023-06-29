@@ -26,6 +26,13 @@ BlurWidget::BlurWidget() : QWidget()
     NSWindow* wnd = [view window];
     [wnd setMovableByWindowBackground:YES];
 
+    // set color for title bar
+    wnd.titlebarAppearsTransparent = YES;
+    wnd.backgroundColor = [NSColor colorWithRed:12. green:132. blue:2. alpha:1.];
+
+    // set title name
+    [wnd setTitle:@"Blur-Behind-Mac"];
+
     // setup the native vibrancy effect
     auto v = [[[NSVisualEffectView alloc] init] autorelease];
     v.material = NSVisualEffectMaterialHUDWindow;
@@ -38,8 +45,6 @@ BlurWidget::BlurWidget() : QWidget()
     effectsView = v;
 
     // interface make
-    setWindowTitle("Gradify");
-
     QWidget* content = new QWidget(this);
     content->setContentsMargins(0, 0, 0, 0);
     content->move(0, 0);
@@ -57,7 +62,7 @@ BlurWidget::BlurWidget() : QWidget()
     NSView* contentView = (NSView*)content->winId();
     [wnd.contentView addSubview:contentView];
 
-    content->show();
+    //content->show();
 }
 
 
