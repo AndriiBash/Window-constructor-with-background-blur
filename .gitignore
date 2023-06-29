@@ -1,0 +1,7 @@
+
+build-BlurBehindMac-Qt_6_5_1_for_macOS-Debug/Makefile
+build-BlurBehindMac-Qt_6_5_1_for_macOS-Debug/moc_mainwindow.cpp
+src/.DS_Store
+src/BlurBehindMac.pro.user
+*.stash
+.DS_Store
